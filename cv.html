@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Fazeel, CV</title>
+<meta name="description" content="Curriculum vitae of Muhammad Fazeel: machine learning for medical imaging, physiological signals and genomics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230e7c86'/><text x='16' y='22' font-family='system-ui' font-size='16' font-weight='600' fill='white' text-anchor='middle'>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="cv-page">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="paper">
+  <p class="back"><a href="index.html">Back to home</a></p>
+
+  <header class="cv-head">
+    <h1>Muhammad Fazeel</h1>
+    <p class="role">Machine learning for medical imaging, signals and genomics</p>
+    <ul class="cv-contact">
+      <li>Grenoble, France</li>
+      <li><a href="mailto:muhammad.fazeel@grenoble-inp.org">muhammad.fazeel@grenoble-inp.org</a></li>
+      <li>+33 7 80 73 14 68</li>
+      <li><a href="https://www.linkedin.com/in/muhammad-fazeel">linkedin.com/in/muhammad-fazeel</a></li>
+      <li><a href="https://github.com/fazeel15">github.com/fazeel15</a></li>
+    </ul>
+  </header>
+
+  <main id="main">
+
+    <section>
+      <h2>Profile</h2>
+      <p>Machine learning researcher working across biomedical AI: MRI, digital pathology, physiological signals and genomics. I adapt foundation models to clinical settings where labels are scarce, cohorts are small and heterogeneous, and a prediction is only useful if a clinician can verify it. My bias is towards making moderate-size backbones work through parameter-efficient adaptation and careful evaluation design rather than through scale.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <article class="cv-entry">
+        <div class="cv-entry-head">
+          <h3>Master of Science, M1 and M2, Signals and Image Processing (SIGMA)</h3>
+          <p class="when">2024 to 2026</p>
+        </div>
+        <p class="where">Grenoble INP Phelma, Université Grenoble Alpes, Grenoble, France</p>
+        <ul>
+          <li>Master's thesis: <i>Automatic Quantification of Skeletal Muscle in Pediatric MRI</i>, carried out at GIPSA-Lab (CNRS) with Inria Grenoble Rhone-Alpes and CHU Grenoble Alpes. Degree awarded 2026, mention Assez Bien.</li>
+          <li>Key modules: Machine Learning, Image Analysis and Computer Vision, Image Processing, Signals and Systems, Bio and Neuro Imaging Methods, Scientific Programming.</li>
+        </ul>
+      </article>
+
+      <article class="cv-entry">
+        <div class="cv-entry-head">
+          <h3>Graduate coursework, Robotics and Intelligent Machine Engineering</h3>
+          <p class="when">2023 to 2024</p>
+        </div>
+        <p class="where">National University of Sciences and Technology, Islamabad, Pakistan</p>
+        <ul>
+          <li>Key modules: Artificial Intelligence, Computer Vision, Machine Learning, Mobile Robotics, Robot Mechanics and Control.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Research and professional experience</h2>
+
+      <article class="cv-entry">
+        <div class="cv-entry-head">
+          <h3>Research Intern</h3>
+          <p class="when">March 2026 to present</p>
+        </div>
+        <p class="where">GIPSA-Lab (CNRS), Inria Grenoble Rhone-Alpes and CHU Grenoble Alpes, Grenoble, France</p>
+        <ul>
+          <li>Quantified how far SegmentAnyMuscle, a muscle-segmentation foundation model pretrained on adult MRI, transfers to pediatric MRI, and characterised its failure modes along acquisition, anatomical coverage and pathology on a clinical cohort of nine children.</li>
+          <li>Benchmarked three annotation-efficient adaptation routes: parameter-efficient fine-tuning of the foundation model with a frozen Vision Transformer backbone, a trainable mask decoder, adapters and a mixture-of-experts head; a 2-D nnU-Net trained from scratch, which segmented a held-out severe-pathology thigh at Dice 0.94; and self-supervised masked-image pretraining on 123 unlabelled MRI series.</li>
+          <li>Tested MedGemma, a medical vision-language model, as a controller for pixel-level annotation in two agentic settings, tool-driven control of brush and eraser actions and function-calling-driven segmentation, to establish where a general medical VLM stops being reliable for localisation.</li>
+          <li>Built a human-in-the-loop annotation workflow in which clinicians corrected model predictions instead of redrawing them, producing 285 expert-reviewed labelled slices across 30 volumes from a previously unannotated clinical archive.</li>
+          <li>Designed the evaluation protocol for the degenerate case of an empty reference mask, replacing Dice with the muscle-to-total-tissue ratio and explicit false-positive accounting, delivered as a reproducible quantification module. Python, PyTorch, nnU-Net v2, NVIDIA H100 on the GRICAD HPC cluster.</li>
+        </ul>
+      </article>
+
+      <article class="cv-entry">
+        <div class="cv-entry-head">
+          <h3>Python Data Scientist and Analyst, independent contractor</h3>
+          <p class="when">July 2024 to present</p>
+        </div>
+        <p class="where">Turing, remote</p>
+        <ul>
+          <li>Contracted to provide autonomous, remote data science services for a global technology client, supporting a flagship large language model product with a user base above 500 million.</li>
+          <li>Optimise the model's agentic capabilities in Python, and previously processed, evaluated and structured large-scale datasets to establish performance metrics for the system.</li>
+        </ul>
+      </article>
+
+      <article class="cv-entry">
+        <div class="cv-entry-head">
+          <h3>AI Researcher</h3>
+          <p class="when">November 2022 to August 2024</p>
+        </div>
+        <p class="where">Khyber Medical University, Peshawar, Pakistan</p>
+        <ul>
+          <li>Developed deep learning methods on gigapixel whole-slide histopathology images to reduce subjectivity in cancer grading, under a research grant co-funded by the Higher Education Commission Pakistan and the British Council UK.</li>
+          <li>Ran GPU-accelerated sequencing pipelines with NVIDIA Clara Parabricks, aligning, calling and annotating variants from raw FASTQ data, with downstream analysis to prioritise candidate oral-cancer genes.</li>
+        </ul>
+      </article>
+
+      <article class="cv-entry">
+        <div class="cv-entry-head">
+          <h3>Research Intern</h3>
+          <p class="when">November 2021 to May 2022</p>
+        </div>
+        <p class="where">AI in Healthcare Lab, National Center of Artificial Intelligence, Peshawar, Pakistan</p>
+        <ul>
+          <li>Built deep learning models for atrial fibrillation, bradycardia and tachycardia classification from ECG signals.</li>
+          <li>Collaborated on sound source separation and audio denoising over spectrograms using generative adversarial networks.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <p class="title">Single-channel speech enhancement using colored spectrograms</p>
+          <p class="meta">S. Gul, M. S. Khan, M. Fazeel. 2024.</p>
+          <a href="https://doi.org/10.1016/j.csl.2024.101626">doi.org/10.1016/j.csl.2024.101626</a>
+        </li>
+        <li>
+          <p class="title">Profiling genetic mutations in the DNA damage repair genes of oral squamous cell carcinoma patients from Pakistan</p>
+          <p class="meta">W. Naeem, F. Nawab, M. T. Sarwar, A. T. Khalil, D. A. Gaber, H. Ahmad, M. Fazeel, et al. 2025.</p>
+          <a href="https://doi.org/10.1038/s41598-025-91700-x">doi.org/10.1038/s41598-025-91700-x</a>
+        </li>
+        <li>
+          <p class="title">Exploring the mutational spectrum of key kinase genes PIK3CA, BRAF, EGFR, ALK and ROS1 in oral squamous cell carcinoma</p>
+          <p class="meta">F. Nawab, W. Naeem, S. Fatima, A. Ali, A. T. Khalil, A. Mehmood, M. Fazeel, et al. 2025.</p>
+          <a href="https://doi.org/10.1186/s12885-025-14609-8">doi.org/10.1186/s12885-025-14609-8</a>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Selected projects</h2>
+      <article class="cv-entry">
+        <h3>Interpretable Broders' grading of oral cancer</h3>
+        <p>Detection and classification of squamous cells in histopathology images with object-detection networks, producing case-level grades supported by pathologist-interpretable evidence rather than a single opaque score.</p>
+      </article>
+      <article class="cv-entry">
+        <h3>Arrhythmia classification on PhysioNet/CinC 2020</h3>
+        <p>ECG preprocessing, handling of class imbalance, and evaluation of multi-class cardiac arrhythmia models with metrics appropriate to the imbalance.</p>
+      </article>
+      <article class="cv-entry">
+        <h3>Sequencing pipeline for oral-cancer gene discovery</h3>
+        <p>Alignment, variant calling and annotation of Illumina next-generation sequencing data with NVIDIA Clara Parabricks, then downstream analysis and visualisation to prioritise candidate genes.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div>
+          <dt>Machine learning</dt>
+          <dd>Deep learning, computer vision, Vision Transformers, foundation model adaptation, parameter-efficient fine-tuning with adapters and mixture-of-experts heads, self-supervised masked-image pretraining, medical image segmentation, vision-language models, agentic function calling, large language model optimisation, generative adversarial networks, evaluation protocol and metric design</dd>
+        </div>
+        <div>
+          <dt>Healthcare data</dt>
+          <dd>Clinical MRI cohorts and 3-D volumes, gigapixel whole-slide histopathology, ECG signals, Illumina next-generation sequencing data, expert annotation workflows with clinicians</dd>
+        </div>
+        <div>
+          <dt>Frameworks</dt>
+          <dd>PyTorch, TensorFlow, nnU-Net v2, NVIDIA Clara Parabricks</dd>
+        </div>
+        <div>
+          <dt>Programming</dt>
+          <dd>Python, C++, MATLAB, LaTeX</dd>
+        </div>
+        <div>
+          <dt>Tools</dt>
+          <dd>Docker, Git, VS Code, Cursor AI, GPU and HPC clusters including NVIDIA H100 and GRICAD</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <dl class="skills">
+        <div><dt>English</dt><dd>C1, fluent in speech and writing</dd></div>
+        <div><dt>French</dt><dd>Beginner</dd></div>
+        <div><dt>Urdu, Hindko, Pashto</dt><dd>Native</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li><a href="https://drive.google.com/file/d/1uKVddQS2QHGnjuutrPLWBvsilbhY2exj/view?usp=sharing">Certified Artificial Intelligence Developer, PIAIC</a></li>
+        <li><a href="https://coursera.org/share/672b1a277585b5469590e25f7379c471">Applied Data Science with Python, Coursera specialization</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/records/X44F73EDNGP7">Neural Networks and Deep Learning, Coursera</a></li>
+        <li><a href="https://coursera.org/share/9d9b2ce2d9c30c4c5b50902c488a4b8a">Introduction to Programming with MATLAB, Coursera</a></li>
+      </ul>
+    </section>
+
+    <p class="print-hint">To save this as a PDF, print the page and choose "Save as PDF".</p>
+
+  </main>
+</div>
+</body>
+</html>

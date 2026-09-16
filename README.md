@@ -4,11 +4,13 @@ Personal page for Muhammad Fazeel. Plain HTML and CSS, no build step and no depe
 
 ## Files
 
-- `index.html` - the whole page
-- `style.css` - all styling, light and dark handled with `prefers-color-scheme`
+Everything sits at the root of the repository; there are no folders.
+
+- `index.html` - home page
+- `cv.html` - the full CV, as a page rather than a PDF
+- `style.css` - all styling for both pages, light and dark handled with `prefers-color-scheme`
 - `404.html` - shown for unknown URLs
-- `assets/profile.png` - portrait
-- `assets/CV_Muhammad_Fazeel.pdf` - CV linked from the page
+- `profile.png` - portrait
 - `.nojekyll` - tells GitHub Pages to serve the files as they are
 
 ## Publishing
@@ -34,7 +36,8 @@ Text lives in `index.html` in plain sections: About, Research, Publications, Pro
 
 Colours and spacing are set once at the top of `style.css` as variables, so changing `--accent` changes every accent on the page.
 
-## Before you publish
+## Notes
 
-- Swap `assets/CV_Muhammad_Fazeel.pdf` for a general CV if you prefer, since the current file is the version tailored to one application.
-- The page shows `muhammad.fazeel@grenoble-inp.org`. Change it in `index.html` if you would rather show a different address; it appears twice, in the sidebar and in the Contact section.
+The CV is `cv.html`, not a PDF. If someone asks for a PDF, open that page and print it to PDF; a print stylesheet drops the navigation and colours so it comes out clean.
+
+The email address `muhammad.fazeel@grenoble-inp.org` appears twice in `index.html` and once in `cv.html`. Change all three if you switch address.
