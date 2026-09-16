@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found</title>
-<link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found, Muhammad Fazeel</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
 <body>
-<main class="cv-main">
-  <div class="wrap">
-    <p class="label">404</p>
-    <h2>Page not found</h2>
-    <p>That page does not exist. Go back to the <a href="/">home page</a>.</p>
-  </div>
-</main>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Site">
+      <a class="brand" href="./">Muhammad Fazeel</a>
+      <ul class="nav-links">
+        <li><a href="./">Home</a></li>
+        <li><a class="nav-cv" href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="wrap notfound">
+    <h1>There is nothing at this address.</h1>
+    <p>The page may have moved or the link may have a typo. Everything on this site is reachable from the <a href="./">home page</a>, and the CV is at <a href="cv.html">cv.html</a>.</p>
+  </main>
 </body>
 </html>
