@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Fazeel, CV</title>
-<meta name="description" content="Curriculum vitae of Muhammad Fazeel: machine learning for medical imaging, physiological signals and genomics.">
+<meta name="description" content="Curriculum vitae of Muhammad Fazeel: data science, generative AI and LLM agents, computer vision, signals and genomics.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f9f8f'/><text x='16' y='22' font-family='system-ui' font-size='17' font-weight='700' fill='white' text-anchor='middle'>F</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
 <section class="cv-hero">
   <div class="wrap">
     <h1>Muhammad Fazeel</h1>
-    <p class="role">Machine learning for medical imaging, signals and genomics</p>
+    <p class="role">Data science, generative AI and applied machine learning</p>
     <ul class="cv-contact">
       <li>Grenoble, France</li>
       <li><a href="mailto:khanfazeel15@gmail.com">khanfazeel15@gmail.com</a></li>
@@ -61,7 +61,7 @@
 
     <section class="cv-section">
       <h2>Profile</h2>
-      <p>Machine learning researcher working across biomedical AI: MRI, digital pathology, physiological signals and genomics. I adapt foundation models to clinical settings where labels are scarce, cohorts are small and heterogeneous, and a prediction is only useful if a clinician can verify it. My bias is towards making moderate-size backbones work through parameter-efficient adaptation and careful evaluation design rather than through scale.</p>
+      <p>Data scientist and machine learning engineer working on generative AI and applied deep learning. I build LLM agents that plan a task, write and execute code for it and evaluate their own output, and I adapt vision models to settings where labels are scarce and the data is heterogeneous. I work across images, physiological signals and sequencing data, with the deepest experience in biomedical AI, where a prediction only counts if a specialist can verify it. My bias is towards making moderate-size models work through parameter-efficient adaptation and careful evaluation design rather than through scale.</p>
     </section>
 
     <section class="cv-section">
@@ -156,6 +156,10 @@
     <section class="cv-section">
       <h2>Selected projects</h2>
       <article class="cv-entry">
+        <h3>SpectraWeaver, an agentic image-processing assistant</h3>
+        <p>Streamlit application built on Gemini 2.5 Pro that turns a stated preprocessing objective into executable Python: it inspects each image, writes and runs the processing code in a constrained local environment, visualises the result and evaluates whether the objective was met. Multi-turn conversations branch from any earlier message, so alternative pipelines can be compared without losing history. <a href="https://github.com/fazeel15/SpectraWeaver">github.com/fazeel15/SpectraWeaver</a></p>
+      </article>
+      <article class="cv-entry">
         <h3>Interpretable Broders' grading of oral cancer</h3>
         <p>Detection and classification of squamous cells in histopathology images with object-detection networks, producing case-level grades supported by pathologist-interpretable evidence rather than a single opaque score.</p>
       </article>
@@ -172,9 +176,9 @@
     <section class="cv-section">
       <h2>Skills</h2>
       <dl class="kv">
-        <div><dt>Machine learning</dt><dd>Deep learning, computer vision, Vision Transformers, foundation model adaptation, parameter-efficient fine-tuning with adapters and mixture-of-experts heads, self-supervised masked-image pretraining, medical image segmentation, vision-language models, agentic function calling, large language model optimisation, generative adversarial networks, evaluation protocol and metric design</dd></div>
-        <div><dt>Healthcare data</dt><dd>Clinical MRI cohorts and 3-D volumes, gigapixel whole-slide histopathology, ECG signals, Illumina next-generation sequencing data, expert annotation workflows with clinicians</dd></div>
-        <div><dt>Frameworks</dt><dd>PyTorch, TensorFlow, nnU-Net v2, NVIDIA Clara Parabricks</dd></div>
+        <div><dt>Machine learning</dt><dd>Generative AI, LLM agents with tool use and code generation, deep learning, computer vision, Vision Transformers, foundation model adaptation, parameter-efficient fine-tuning with adapters and mixture-of-experts heads, self-supervised masked-image pretraining, medical image segmentation, vision-language models, agentic function calling, large language model optimisation, generative adversarial networks, evaluation protocol and metric design</dd></div>
+        <div><dt>Data domains</dt><dd>Clinical MRI cohorts and 3-D volumes, gigapixel whole-slide histopathology, ECG signals, Illumina next-generation sequencing data, expert annotation workflows with clinicians</dd></div>
+        <div><dt>Frameworks</dt><dd>PyTorch, TensorFlow, Streamlit, Gemini API, NumPy, scikit-image, nnU-Net v2, NVIDIA Clara Parabricks</dd></div>
         <div><dt>Programming</dt><dd>Python, C++, MATLAB, LaTeX</dd></div>
         <div><dt>Tools</dt><dd>Docker, Git, VS Code, Cursor AI, GPU and HPC clusters including NVIDIA H100 and GRICAD</dd></div>
       </dl>
