@@ -3,7 +3,7 @@
   var root = document.documentElement;
 
   // Theme
-  var toggle = document.querySelector('.theme-toggle');
+  var toggle = document.querySelector('.theme-btn');
   if (toggle) {
     toggle.addEventListener('click', function () {
       var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -15,17 +15,17 @@
   }
 
   // Mobile menu
-  var menuButton = document.querySelector('.nav-toggle');
-  var links = document.getElementById('nav-links');
+  var menuButton = document.querySelector('.menu-btn');
+  var links = document.getElementById('nav');
   if (menuButton && links) {
     menuButton.addEventListener('click', function () {
-      var open = links.classList.toggle('is-open');
+      var open = links.classList.toggle('open');
       menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
       menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
     links.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') {
-        links.classList.remove('is-open');
+        links.classList.remove('open');
         menuButton.setAttribute('aria-expanded', 'false');
       }
     });
