@@ -1,19 +1,5 @@
-// Theme toggle, mobile menu and footer year. No dependencies.
+// Mobile menu and footer year. No dependencies.
 (function () {
-  var root = document.documentElement;
-
-  // Theme
-  var toggle = document.querySelector('.theme-btn');
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var current = root.getAttribute('data-theme') || (prefersDark ? 'dark' : 'light');
-      var next = current === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem('theme', next); } catch (e) {}
-    });
-  }
-
   // Mobile menu
   var menuButton = document.querySelector('.menu-btn');
   var links = document.getElementById('nav');
