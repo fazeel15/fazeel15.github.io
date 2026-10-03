@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Fazeel</title>
-<meta name="description" content="Muhammad Fazeel, data scientist working on generative AI, LLM agents, computer vision and applied deep learning across images, signals and large-scale data.">
+<meta name="description" content="Muhammad Fazeel, machine learning researcher working on medical imaging, foundation model adaptation, self-supervised learning and LLM agents across images, signals and sequencing data.">
 <meta property="og:title" content="Muhammad Fazeel">
-<meta property="og:description" content="Data science and generative AI: LLM agents, computer vision, signals and large-scale data.">
+<meta property="og:description" content="Machine learning for medical imaging and health data, plus LLM agents, signals and large-scale data.">
 <meta property="og:image" content="https://fazeel15.github.io/profile.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f9f8f'/><text x='16' y='22' font-family='system-ui' font-size='17' font-weight='700' fill='white' text-anchor='middle'>F</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,9 +46,9 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <p class="eyebrow">Data scientist and machine learning engineer, Grenoble, France</p>
-      <h1>Generative AI and machine learning, built to hold up outside the benchmark.</h1>
-      <p class="hero-p">I work across data science and deep learning: LLM agents that plan a task, write the Python for it and run it; vision models adapted with few labels; and pipelines over images, signals and sequencing data. The through line is making moderate-size models useful through careful adaptation and honest evaluation rather than through scale. Clinical data is where I have gone deepest, because it punishes anything that only works on a benchmark.</p>
+      <p class="eyebrow">Machine learning researcher, Grenoble, France</p>
+      <h1>Machine learning for medical data, built to hold up outside the benchmark.</h1>
+      <p class="hero-p">I work across medical imaging, physiological signals and sequencing data, with a focus on vision models adapted with few labels, self-supervised learning from unlabelled data, and evaluation that reflects the clinical question. I also build LLM agents that plan a task, write the Python for it and run it. The through line is making moderate-size models useful through careful adaptation and honest evaluation rather than through scale. Clinical data is where I have gone deepest, because it punishes anything that only works on a benchmark.</p>
       <div class="actions">
         <a class="btn btn-primary" href="cv.html">Read my CV</a>
         <a class="btn btn-ghost" href="mailto:khanfazeel15@gmail.com">Email me</a>
@@ -63,10 +63,6 @@
   <div class="wrap">
     <ul class="modalities">
       <li>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
-        <div><b>Generative AI</b><span>LLM agents, tool use and code generation, agentic function calling</span></div>
-      </li>
-      <li>
         <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><circle cx="15" cy="14" r="2.5"/><circle cx="8" cy="16" r="1.5"/></svg>
         <div><b>Computer vision</b><span>Foundation model adaptation, segmentation, gigapixel images</span></div>
       </li>
@@ -77,6 +73,10 @@
       <li>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3c0 6 10 6 10 12M17 3c0 6-10 6-10 12M7 21c0-3 10-3 10-6M17 21c0-3-10-3-10-6M9 7h6M9 17h6"/></svg>
         <div><b>Data at scale</b><span>Sequencing pipelines, dataset evaluation, GPU and HPC clusters</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+        <div><b>Generative AI</b><span>LLM agents, tool use and code generation, agentic function calling</span></div>
       </li>
     </ul>
   </div>
@@ -96,9 +96,9 @@
         <aside class="facts">
           <dl>
             <div><dt>Currently</dt><dd>Python Data Scientist and Analyst, Turing, remote</dd></div>
-            <div><dt>Focus</dt><dd>Generative AI and LLM agents, computer vision, applied data science</dd></div>
+            <div><dt>Focus</dt><dd>Medical imaging, foundation model adaptation, self-supervised learning, LLM agents</dd></div>
             <div><dt>Education</dt><dd>M.Sc. Signals and Image Processing, Grenoble INP Phelma, 2026</dd></div>
-            <div><dt>Languages</dt><dd>English C1, French beginner, Urdu, Hindko and Pashto native</dd></div>
+            <div><dt>Languages</dt><dd>English C1, Urdu, Hindko and Pashto native</dd></div>
             <div><dt>Based in</dt><dd>Grenoble, France</dd></div>
           </dl>
         </aside>
@@ -126,12 +126,14 @@
           <div class="tl-body">
             <h3>Research Intern</h3>
             <p class="tl-where">GIPSA-Lab (CNRS), Inria Grenoble Rhone-Alpes and CHU Grenoble Alpes</p>
-            <p>Master's thesis on automatic quantification of skeletal muscle in pediatric MRI. Measured how far SegmentAnyMuscle, a foundation model pretrained on adult MRI, transfers to children, and characterised its failure modes along acquisition, anatomy and pathology on a clinical cohort of nine children.</p>
+            <p>Master's thesis on automatic quantification of skeletal muscle in pediatric MRI. Asked how far SegmentAnyMuscle, a foundation model pretrained on adult MRI, generalises to children with neuromuscular disease, and what minimum adaptation makes it usable.</p>
             <ul>
-              <li>Benchmarked three annotation-efficient adaptation routes: parameter-efficient fine-tuning with a frozen Vision Transformer, adapters and a mixture-of-experts head; a 2-D nnU-Net trained from scratch, reaching Dice 0.94 on a held-out severe-pathology thigh; and self-supervised masked-image pretraining on 123 unlabelled series.</li>
-              <li>Built a human-in-the-loop workflow in which clinicians corrected predictions instead of redrawing them, producing 285 expert-reviewed slices across 30 volumes from a previously unannotated archive.</li>
+              <li>Showed through clinical feedback that the model does not generalise. It predicted muscle in children whose disease had left no muscle, and its failures followed acquisition, anatomical coverage and pathology.</li>
+              <li>Learned skeletal muscle anatomy with the radiologists and built a human-in-the-loop workflow in which clinicians corrected predictions instead of redrawing them, turning a previously unannotated clinical archive into expert-reviewed training data.</li>
+              <li>Fine-tuned the foundation model with adapter layers, following the SegmentAnyMuscle authors, and showed that this is not enough with a small labelled set.</li>
+              <li>Trained a 2-D nnU-Net from scratch and, separately, pretrained its encoder with SimMIM-style masked image modelling on unlabelled scans before fine-tuning the decoder. The pretrained model was the most reliable at predicting no muscle where there was none.</li>
               <li>Tested MedGemma as a controller for pixel-level annotation, through brush-tool control and function calling, to find where a general medical VLM stops being reliable for localisation.</li>
-              <li>Redesigned the evaluation protocol for empty reference masks, replacing Dice with a muscle-to-total-tissue ratio and explicit false-positive accounting.</li>
+              <li>Redesigned the evaluation protocol for empty reference masks, where Dice cannot rank predictions, using a muscle-to-total-tissue ratio and explicit false-positive accounting.</li>
             </ul>
             <p class="tl-tags">PyTorch · nnU-Net v2 · NVIDIA H100 · GRICAD HPC</p>
           </div>
