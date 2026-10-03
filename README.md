@@ -1,6 +1,6 @@
 # fazeel15.github.io
 
-Personal site of Muhammad Fazeel: data scientist, LLM agents and applied deep learning. Plain HTML, CSS and a few lines of JavaScript. No build step, no dependencies, no folders.
+My Personal Site.
 
 ## Files
 
